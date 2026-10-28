@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/main/.claude-plugin/plugin.schema.json",
+  "name": "s1000d-review",
+  "version": "0.1.0",
+  "dependencies": [
+    "s1000d-reader-mcp",
+    "s1000d-verify-mcp"
+  ],
+  "description": "S1000D のデータモジュールのレビュー Skill。reader で DM を構造として読み、verify の suggest_fixes（機械で判定できること）、BREX の nonContextRules、文章（用語集）の 3 つの観点を書き分けて指摘を集め、利用者が選んだ指摘を writer の create_comment で comment DM にする。Review Report を返す。ASD とは無関係の個人プロジェクト。S1000D® は ASD の登録商標。",
+  "author": {
+    "name": "shuji-bonji",
+    "email": "bonji@mikuro.jp",
+    "url": "https://github.com/shuji-bonji"
+  },
+  "homepage": "https://github.com/shuji-bonji/s1000d-review-skill",
+  "repository": "https://github.com/shuji-bonji/s1000d-review-skill",
+  "license": "MIT",
+  "keywords": [
+    "s1000d",
+    "skill",
+    "review",
+    "data-module",
+    "brex",
+    "comment",
+    "csdb"
+  ]
+}

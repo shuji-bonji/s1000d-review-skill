@@ -1,0 +1,22 @@
+[
+  {"query": "CSDB に入れた手順 DM（DMC-S1000DBIKE-AAA-D00-00-01-00AA-520A-A）をレビューして、問題点を一覧にしてほしい", "should_trigger": true},
+  {"query": "この DM の BREX の手動確認の項目を、本文と照らして見てほしい。nonContextRules ってやつ", "should_trigger": true},
+  {"query": "S1000D の手順 DM を見直して、直してほしいところを comment DM として残して", "should_trigger": true},
+  {"query": "用語集（glossary.csv）に沿って書けているか、この説明 DM を見てください", "should_trigger": true},
+  {"query": "レビュー結果を comment DM にしたい。commentType とか priority は何にすればいい？", "should_trigger": true},
+  {"query": "DM の XSD と BREX の違反、参照切れ、あと文章のおかしいところを全部まとめて指摘してほしい", "should_trigger": true},
+  {"query": "この DM、STE に沿って書けてる？ 辞書は持ってないけど見てもらえますか", "should_trigger": true},
+  {"query": "csdb フォルダの故障探求 DM を 3 件レビューして。機密区分が付いてるのも混ざってると思う", "should_trigger": true},
+  {"query": "suggest_fixes の結果と、文章面のチェックをまとめて、レビューレポートにして", "should_trigger": true},
+  {"query": "review these S1000D data modules and leave the findings as comment data modules in the CSDB", "should_trigger": true},
+  {"query": "この DM を英語にして、xcomet で採点してほしい", "should_trigger": false},
+  {"query": "体験型マニュアルの manual.json を S1000D の CSDB に変換して", "should_trigger": false},
+  {"query": "仕様メモから S1000D の手順 DM を新しく作って、検証まで通して", "should_trigger": false},
+  {"query": "この DM の XSD 検証だけ実行して、結果を教えて", "should_trigger": false},
+  {"query": "受け取った契約書の PDF が改ざんされていないか確認して", "should_trigger": false},
+  {"query": "PDF/UA 準拠の PDF を作って納品したい", "should_trigger": false},
+  {"query": "この社内マニュアルの文章を校正して。誤字と言い回しを直してほしい", "should_trigger": false},
+  {"query": "このブログ記事の日本語を自然な英語に翻訳して", "should_trigger": false},
+  {"query": "BREX のルール BR-00078 の意味を説明して", "should_trigger": false},
+  {"query": "DM の参照切れを自動で直して、ファイルに書き込んで", "should_trigger": false}
+]
