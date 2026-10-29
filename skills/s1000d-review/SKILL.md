@@ -24,8 +24,8 @@ CSDB の中でレビューは comment DM で回る。この Skill は DM を書�
 
 | MCP | 必須/任意 | 役割 | 最低版 |
 |---|---|---|---|
-| s1000d-reader-mcp | **必須** | `list_data_modules` で対象を一覧にする。`read_data_module` で DM を構造として読む（`section: "outline"`、`size`、`securityClassification`） | 0.7.0 |
-| s1000d-verify-mcp | **必須** | `suggest_fixes` で XSD・BREX・参照・適用性の指摘と修正の候補を得る | 0.6.0 |
+| s1000d-reader-mcp | **必須** | `list_data_modules` で対象を一覧にする。`read_data_module` で DM を構造として読む（`section: "outline"`、`size`、`securityClassification`） | 0.7.1 |
+| s1000d-verify-mcp | **必須** | `suggest_fixes` で XSD・BREX・参照・適用性の指摘と修正の候補を得る | 0.6.1 |
 | s1000d-brex-mcp | 任意 | `check_against_brex` の `manualChecks`（nonContextRules の本文）、`explain_brex` でルールの説明 | 0.4.0 |
 | s1000d-writer-mcp | 任意 | `create_comment` で comment DM を作る。無ければ指摘を文章で返すだけ | 0.1.1 |
 
@@ -124,6 +124,7 @@ CSDB の中でレビューは comment DM で回る。この Skill は DM を書�
 3. 対象の DM 1 件につき comment DM 1 件。選ばれた指摘を `paragraphs` に 1 件ずつ入れる
 4. まず `write: false` で呼び、`xml` の要点（`commentCode`、`fileName`、`paragraphs`）と `verification` を利用者に見せる
 5. 利用者が確認したら `write: true`。書き込み先は `csdbDirs` の先頭のフォルダー。`writeSkipped`（`no-csdb-dir`、`write-conflict`、`schema-invalid`）が返ったら、理由を伝えて止まる。`overwrite` と `allowInvalid` は、利用者が明示したときだけ使う
+6. 書いた comment DM を reader・verify で確かめるときは、reader 0.7.1・verify 0.6.1 以降なら、起動した後に書いたファイルも次の呼び出しから見える。それより古い版は、書いた直後の comment DM が見つからないことがある。その場合は reader・verify を起動し直す
 
 ### Phase 7 — Review Report
 

@@ -51,8 +51,8 @@ flowchart LR
 
 | MCP | 必須 | 役割 | 最低版 |
 |---|---|---|---|
-| [@shuji-bonji/s1000d-reader-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-reader-mcp) | 必須 | DM の一覧と読み取り（`section: "outline"`、`size`、`securityClassification`） | 0.7.0 |
-| [@shuji-bonji/s1000d-verify-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-verify-mcp) | 必須 | `suggest_fixes` | 0.6.0 |
+| [@shuji-bonji/s1000d-reader-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-reader-mcp) | 必須 | DM の一覧と読み取り（`section: "outline"`、`size`、`securityClassification`） | 0.7.1 |
+| [@shuji-bonji/s1000d-verify-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-verify-mcp) | 必須 | `suggest_fixes` | 0.6.1 |
 | [@shuji-bonji/s1000d-brex-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-brex-mcp) | 任意 | `check_against_brex`（`manualChecks`）、`explain_brex` | 0.4.0 |
 | [@shuji-bonji/s1000d-writer-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-writer-mcp) | 任意 | `create_comment`。無ければ指摘を文章で返すだけです | 0.1.1 |
 

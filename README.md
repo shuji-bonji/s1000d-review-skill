@@ -51,8 +51,8 @@ Before quoting body text, the Skill shows the `securityClassification` of the DM
 
 | MCP | Required | Role | Minimum version |
 |---|---|---|---|
-| [@shuji-bonji/s1000d-reader-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-reader-mcp) | Yes | Lists and reads DMs (`section: "outline"`, `size`, `securityClassification`) | 0.7.0 |
-| [@shuji-bonji/s1000d-verify-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-verify-mcp) | Yes | `suggest_fixes` | 0.6.0 |
+| [@shuji-bonji/s1000d-reader-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-reader-mcp) | Yes | Lists and reads DMs (`section: "outline"`, `size`, `securityClassification`) | 0.7.1 |
+| [@shuji-bonji/s1000d-verify-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-verify-mcp) | Yes | `suggest_fixes` | 0.6.1 |
 | [@shuji-bonji/s1000d-brex-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-brex-mcp) | No | `check_against_brex` (`manualChecks`), `explain_brex` | 0.4.0 |
 | [@shuji-bonji/s1000d-writer-mcp](https://www.npmjs.com/package/@shuji-bonji/s1000d-writer-mcp) | No | `create_comment`. Without it, the findings are returned as text only | 0.1.1 |
 
